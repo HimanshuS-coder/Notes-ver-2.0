@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent go =new Intent(getApplicationContext() , Login.class);
+                Intent go =new Intent(getApplicationContext() , slider.class);
                 startActivity(go);
                 finish();
             }

@@ -6,4 +6,5 @@
     // These two color added
     <color name="colorGreen">#5CE85C</color>
     <color name="colordarkgreen">#458E45</color>
+    <color name="colorTransparentWhite">#cccccc</color>
 </resources>

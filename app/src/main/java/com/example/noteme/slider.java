@@ -74,13 +74,13 @@ public class slider extends AppCompatActivity {
                 mdots[i] =new TextView(this);
                 mdots[i].setText(Html.fromHtml("&#8226;",0));
                 mdots[i].setTextSize(35);
-                mdots[i].setTextColor(getResources().getColor(R.color.colorGreen,getTheme()));
+                mdots[i].setTextColor(getResources().getColor(R.color.greyDots,getTheme()));
 
                 dots.addView(mdots[i]);
         }
 
         if (mdots.length > 0){
-            mdots[position].setTextColor(getResources().getColor(R.color.colordarkgreen,getTheme()));
+            mdots[position].setTextColor(getResources().getColor(R.color.colorGreenMain,getTheme()));
         }
     }
 

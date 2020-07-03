@@ -4,7 +4,11 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     // These two color added
-    <color name="colorGreen">#5CE85C</color>
-    <color name="colordarkgreen">#458E45</color>
+    <color name="colorGreenMain">#29DB94</color>
+    <color name="colordarkgreen">#357535</color>
+    <color name="colorlitegreen">#5AC15A</color>
+    <color name="Hellocolor">#609260</color>
+    <color name="greyfields">#EFECEC</color>
+    <color name="greyDots">#D1CACA</color>
     <color name="colorTransparentWhite">#cccccc</color>
 </resources>

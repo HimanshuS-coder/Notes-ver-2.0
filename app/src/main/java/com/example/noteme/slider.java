@@ -3,6 +3,8 @@ package com.example.noteme;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
@@ -11,6 +13,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import static maes.tech.intentanim.CustomIntent.customType;
 
 public class slider extends AppCompatActivity {
     ViewPager viewPager;
@@ -24,6 +27,8 @@ public class slider extends AppCompatActivity {
     Button prevbutton;
     int currentpage;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +39,16 @@ public class slider extends AppCompatActivity {
         prevbutton=findViewById(R.id.prevbutton);
         skip=findViewById(R.id.skip);
         skip.setText("Skip");
+
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent go =new Intent(getApplicationContext(),Login1.class);
+                startActivity(go);
+                customType(slider.this,"fadein-to-fadeout");
+
+            }
+        });
 
         sliderAdapter = new SliderAdapter(this);
 
@@ -52,7 +67,12 @@ public class slider extends AppCompatActivity {
 
                 if(nextbutton.getText()== "Finish"){
 
-                    Toast.makeText(slider.this, "FINISH", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(slider.this, "FINISH", Toast.LENGTH_SHORT).show();
+                    Intent go =new Intent(getApplicationContext(),Login1.class);
+                    startActivity(go);
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+                   // customType(slider.this,"left-to-right");
+
                 }
                 viewPager.setCurrentItem(currentpage +1);
             }

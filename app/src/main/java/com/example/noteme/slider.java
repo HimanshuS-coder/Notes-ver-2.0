@@ -3,6 +3,7 @@ package com.example.noteme;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -48,7 +49,9 @@ public class slider extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 if(nextbutton.getText()== "Finish"){
+
                     Toast.makeText(slider.this, "FINISH", Toast.LENGTH_SHORT).show();
                 }
                 viewPager.setCurrentItem(currentpage +1);

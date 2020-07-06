@@ -24,6 +24,13 @@ public class Login1 extends AppCompatActivity {
 
     }
 
+    public void reg (View view){
+
+        Intent go = new Intent (getApplicationContext(),Register.class);
+        startActivity(go);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

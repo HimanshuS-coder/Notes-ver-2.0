@@ -67,7 +67,6 @@
         android:text="Not a member ?"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -78,6 +77,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginBottom="6dp"
         android:fontFamily="@font/candara_regular"
+        android:onClick="reg"
         android:text="Register"
         android:textColor="@color/colorlitegreen"
         android:textSize="20sp"

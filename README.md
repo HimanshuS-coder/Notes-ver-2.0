@@ -2,5 +2,4 @@
 
  Notes taking App
 
- Currently in Progress
  
